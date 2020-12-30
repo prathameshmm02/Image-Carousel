@@ -4,12 +4,30 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  z-index: 3;
+}
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-size: 100%;
+  background-position: center;
+  background-image: url("./assets/picture1.jpg");
+  transition: all 1s ease;
+}
 .slide-container {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 5;
   margin: auto;
   width: 100%;
   height: auto;
